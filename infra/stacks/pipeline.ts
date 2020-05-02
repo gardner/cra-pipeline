@@ -18,7 +18,7 @@ export class Pipeline extends CDK.Stack {
     // Amazon S3 bucket to store CRA website
     const bucketWebsite = new S3.Bucket(this, 'Files', {
       websiteIndexDocument: 'index.html',
-      websiteErrorDocument: 'error.html',
+      websiteErrorDocument: 'index.html',
       publicReadAccess: true,
     })
 
